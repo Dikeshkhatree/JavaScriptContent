@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Animation</title>
+</head>
+<body>
+    <img src="earth.png" id="earthImage" height="330px" width="400px">
+
+    <!-- onclick is an attribute -->
+    <button onclick="update()">Revolve</button>
+    <button onclick="stop()">Stop</button> 
+    
+    <script>
+        function stop() {
+            // Change the image to the static earth image
+            document.getElementById("earthImage").src = "earth.png"; 
+        }
+
+        function update() {
+            // Change the image to the revolving gif
+            document.getElementById("earthImage").src = "gif.gif"; 
+        }
+    </script>
+</body>
+</html>

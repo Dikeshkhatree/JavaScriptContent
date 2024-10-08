@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="dom">this is first content</h1>
+    <h2 id="dom2">this is second</h2>
+    <!-- this function is called after the button is clicked -->
+     <!-- or the function are executed when the button is clicked -->
+    <button onclick="changeContent()">change content</button>
+    <script>
+        function changeContent() {
+            document.getElementById("dom").innerHTML = "Content has been changed";
+            document.getElementById("dom2").innerHTML = "2nd Content are changed";
+        }
+    </script>
+</body>
+</html>
